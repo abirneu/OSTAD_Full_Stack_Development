@@ -4,7 +4,7 @@ const App = () => {
   const user = {isAdmin : true}
   return(
     <div>
-      <p>Hello</p>
+      <p>Hello abir</p>
       {user.isAdmin ? <p>You are admin</p>: <p>you are user</p>}
     </div>
   )
