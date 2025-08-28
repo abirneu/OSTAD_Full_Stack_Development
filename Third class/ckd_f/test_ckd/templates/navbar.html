@@ -1,0 +1,57 @@
+{% load static %}
+<!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+            <div>
+              <!-- Logo/Name -->
+              <a href="#" class="flex items-center py-4 px-2"><span class="font-semibold text-gray-800 text-2xl">CKD Predictor</span></a>
+            </div>
+            <!-- Primary Nav -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a href="{% url 'home' %}" class="py-4 px-2 text-teal-600 border-b-4 border-teal-600 font-semibold">Home</a>
+              <a href="{% url 'doctor_dashboard' %}" class="py-4 px-2 text-gray-500 font-semibold hover:text-teal-600 transition duration-300">Doctor_d</a>
+              <a href="{% url 'patient_info_id' %}" class="py-4 px-2 text-gray-500 font-semibold hover:text-teal-600 transition duration-300">Paitent_info</a>
+              <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-teal-600 transition duration-300">Contact</a>
+            </div>
+          </div>
+          <!-- Secondary Nav -->
+          <div class="hidden md:flex items-center space-x-3">
+            <a href="{% url 'signup' %}" class="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition duration-300">Signup</a>
+            <a href="{% url 'login' %}" class="py-2 px-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300">Login</a>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class="w-6 h-6 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="hidden mobile-menu">
+        <ul>
+          <li class="active">
+            <a href="{% url 'home' %}" class="block text-sm px-2 py-4 text-white bg-teal-600 font-semibold">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block text-sm px-2 py-4 hover:bg-teal-600 transition duration-300">About</a>
+          </li>
+          <li>
+            <a href="#" class="block text-sm px-2 py-4 hover:bg-teal-600 transition duration-300">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block text-sm px-2 py-4 hover:bg-teal-600 transition duration-300">Contact</a>
+          </li>
+          <li class="border-t border-gray-200">
+            <a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Predict</a>
+          </li>
+          <li>
+            <a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Group Analysis</a>
+          </li>
+        </ul>
+      </div>
+    </nav>

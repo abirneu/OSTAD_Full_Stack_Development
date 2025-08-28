@@ -1,0 +1,24 @@
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+*.log
+*.pot
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Database / media (optional)
+db.sqlite3
+media/
+CodeMama/
